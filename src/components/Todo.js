@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { ListGroupItem, Col, Row, Button } from "reactstrap";
+import { ListGroupItem, Button } from "reactstrap";
 
 class Todo extends Component {
   constructor(props) {
@@ -12,6 +12,7 @@ class Todo extends Component {
   };
 
   onEditingClick = () => {
+    console.log("--->", this.props);
     this.setState({
       isEditing: true,
       prevText: this.state.text
@@ -64,16 +65,9 @@ class Todo extends Component {
 
   render() {
     let isEditing = this.state.isEditing;
-    const date = new Date();
-    const options = {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-      weekday: "long"
-    };
     return (
       <ListGroupItem>
-        <span>{date.toLocaleString("en-US", options)}</span>
+        <span>{this.props.createTime}</span>
         {isEditing ?
           <input type="text"
                  value={this.state.text}

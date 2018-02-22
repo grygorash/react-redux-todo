@@ -27,10 +27,3 @@ export const deleteTodo = (id) => {
     id
   };
 };
-
-export const errorTodo = (text) => {
-  return {
-    type: "ERROR_TODO",
-    text
-  };
-};
