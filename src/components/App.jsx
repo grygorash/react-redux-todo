@@ -7,6 +7,7 @@ import './App.css'
 
 const App = () => (
   <Container>
+    <h3>Create Todo App</h3>
     <AddTodo />
     <Filter />
     <VisibleTodoList />

@@ -4,25 +4,36 @@
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 5px;
   padding: 20px; }
+  .container h3 {
+    margin-bottom: 30px; }
+  .container form {
+    padding: 0 0 20px;
+    margin: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
   .container .filter {
-    padding: 20px; }
+    padding: 10px 0 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
     .container .filter button {
       margin-left: 20px; }
+  .container .empty-list {
+    padding: 20px 0 0 0; }
   .container .todo-list {
-    padding: 20px 20px 0 20px; }
-    .container .todo-list ul {
-      width: 100%; }
-      .container .todo-list ul li .line-through {
+    padding: 20px 20px 0 20px;
+    width: 100%; }
+    .container .todo-list li {
+      margin-bottom: 20px;
+      border-radius: 5px; }
+      .container .todo-list li .line-through {
         text-decoration: line-through;
-        color: #eee; }
-      .container .todo-list ul li div:nth-child(2) {
+        color: rgba(0, 0, 0, 0.125); }
+      .container .todo-list li div:nth-child(2) {
         padding: 7px 0;
         word-break: break-all; }
-      .container .todo-list ul li button {
-        margin: 20px 0 0 20px; }
-      .container .todo-list ul li span {
+      .container .todo-list li button {
+        margin: 20px 0 10px 20px; }
+      .container .todo-list li span {
         display: block;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
         margin-bottom: 10px;
         padding-bottom: 10px; }
   .container button {
